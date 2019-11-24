@@ -12,15 +12,15 @@
   <div class="wrap">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        <a class="navbar-item" href="/">
+          <img src="../images/logo.png" width="112" height="28">
         </a>
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-link is-small" href="javascript:;" onclick="showModal('order')">预约参观</a>
-            <a class="button is-light is-small" onclick="showModal('magazine')">骨科行业周刊</a>
+            <a class="button is-link is-small" href="javascript:;" onclick="showModal('about')">预约参观</a>
+            <a class="button is-light is-small" href="javascript:;" onclick="showModal('magazine')">骨科行业周刊</a>
           </div>
         </div>
       </div>
@@ -30,8 +30,8 @@
       <div class="content layer">
         <h2 class="subtitle">我们帮助企业打造<br>更加专业的骨科供应链，<br>为您赢得客户的尊敬，获得患者信任。</h2>
         <div class="buttons">
-          <a class="button is-link">预约参观</a>
-          <a class="button is-light">骨科行业周刊</a>
+          <a class="button is-link" href="javascript:;" onclick="showModal('about')">预约参观</a>
+          <a class="button is-light" href="javascript:;" onclick="showModal('magazine')">骨科行业周刊</a>
         </div>
       </div>
     </section>
@@ -39,19 +39,19 @@
       <h1 class="common-title">商业版骨科智慧仓</h1>
       <div class="common-content">
         <div class="columns">
-          <div class="column">
+          <div class="column item1">
             <div class="text">
               <p class="column-title">厂家</p>
               <p class="column-text">我们帮助经销商提升服务专业度，降低库存和资金占压。</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column item2">
             <div class="text">
               <p class="column-title">平台</p>
               <p class="column-text">我们帮助流通平台做到合法合规，低成本快速复制，减少人员依赖。</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column item2">
             <div class="text">
               <p class="column-title">代理</p>
               <p class="column-text">我们帮助生产企业提升医院/经销商满意度，实时掌控下游数据。</p>
@@ -71,32 +71,44 @@
     <div class="section section4">
       <div class="content">
         <h1 class="common-title">智能化解决方案</h1>
-        <h2 class="subtitle">无境骨仓智能化解决方案，通过物联与智能技术（AIoT）实现数字化、远程值守、自主运作的骨科智慧仓，有效解决双向物流，人员依赖，全程追踪等问题，帮助企业打造更加专业的骨科耗材供应链，为您赢得客户尊敬，获得患者信任。</h2>
+        <h2 class="subtitle">
+          无境骨仓智能化解决方案，通过物联与智能技术（AIoT）实现数字化、远程值守、自主运作的骨科智慧仓，有效解决双向物流，人员依赖，全程追踪等问题，帮助企业打造更加专业的骨科耗材供应链，为您赢得客户尊敬，获得患者信任。
+        </h2>
       </div>
       <div class="container columns">
-        <div class="column slide-container">
-         
+        <div class="column swiper-column">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../images/section4/slide1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/section4/slide2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/section4/slide3.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="column">
           <div class="desc-list">
             <div class="desc-label">
               <ul>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
-                <li><span></span></li>
+                <li><span class="icon1"></span></li>
+                <li><span class="icon2"></span></li>
+                <li><span class="icon3"></span></li>
+                <li><span class="icon4"></span></li>
+                <li><span class="icon5"></span></li>
+                <li><span class="icon6"></span></li>
+                <li><span class="icon7"></span></li>
+                <li><span class="icon8"></span></li>
               </ul>
             </div>
             <div class="desc-text">
               <ul>
                 <li>专业化骨科工具和钉盒管理</li>
                 <li>骨科手术组套及手术模板</li>
-                <li>系统秒级核验，不丢不错</li>
                 <li>系统秒级核验，不丢不错</li>
                 <li>AI视觉辅助系统，6天快速上手</li>
                 <li>严格遵循药监合规性要求</li>
@@ -109,7 +121,180 @@
         </div>
       </div>
     </div>
+    <div class="section section5">
+      <a class="button is-link" href="javascript:;" onclick="showModal('order')">预约参观</a>
+    </div>
+    <div class="section section6">
+      <div class="section-header">
+        <img src="../images/section6/header-banner.png" alt="">
+      </div>
+      <div class="container">
+        <div class="process">
+          <span class="step step1 step-line-row">
+            <em>预约参观/演示</em>
+          </span>
+          <span class="step step2 step-line-row">
+            <em>一对一需求咨询和规划</em>
+          </span>
+          <span class="step step3 step-line-column">
+            <em>深度了解需求<br>考察实际场景</em>
+          </span>
+          <span class="step step4 step-line-row step-line-column">
+            <em>改造和安装智慧仓<br>实施数字化系统</em>
+          </span>
+          <span class="step step5 step-line-row">
+            <em>签到</em>
+          </span>
+          <span class="step step6">
+            <em>确定定制化骨仓智能供应解决方案</em>
+          </span>
+          <span class="step step7 step-line-row">
+            <em>理念和操作培训</em>
+          </span>
+          <span class="step step8 step-line-row">
+            <em>正式上线</em>
+          </span>
+          <span class="step step9">
+            <em>全生命周期持续服务</em>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="section section7">
+      <div class="section-header">
+        <p class="section-title">成功案例</p>
+      </div>
+      <div class="case case1">
+        <div class="content layer">
+          <h1 class="common-title">华润医药商业</h1>
+          <h2 class="subtitle">
+            无境创新已经为华润吉林医药公司落地了骨科智慧仓，品规及借还数据全数字化记录，提高了90%的效率，实现365天运作，出错率降为0。大大降低了骨科高值耗材管理的难度，为其业务快速扩张提供了保障。</h2>
+        </div>
+      </div>
+      <div class="case case2">
+        <div class="content layer">
+          <h1 class="common-title">国内知名医疗器械企业</h1>
+          <h2 class="subtitle">
+            在深圳与国内知名医疗器械企业合作落地了骨科智慧仓，采用AI识别引擎，身份控制，全方位监控系统，真正实现24小时远程管理，是无境骨科智慧仓的下一代示范仓，提升了该客户的企业形象与专业度。</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column item1">
+            <img src="../images/section7/item1.png" alt="">
+            <div class="text">
+              <p class="column-title">
+                无境骨科智慧仓是一个全新的、针对骨科器械管理的解决方案，并且可以在院内建仓，模板化、智能化操作让骨科耗材器械送错、迟到的概率降为0，紧急的创伤手术病患不用再痛苦地等待。这对于我们医院和病患来说，都是一个非常好的消息。我非常愿意向医院和相关的医疗机构推荐无境骨科智慧仓。
+              </p>
+              <p class="column-text">——‌大型三甲医院骨科专家</p>
+            </div>
+          </div>
+          <div class="column item2">
+            <img src="../images/section7/item2.png" alt="">
+            <div class="text">
+              <p class="column-title">
+                无境骨科智慧仓是一个全新的、针对骨科器械管理的解决方案，并且可以在院内建仓，模板化、智能化操作让骨科耗材器械送错、迟到的概率降为0，紧急的创伤手术病患不用再痛苦地等待。这对于我们医院和病患来说，都是一个非常好的消息。我非常愿意向医院和相关的医疗机构推荐无境骨科智慧仓。
+              </p>
+              <p class="column-text">——‌医疗流通龙头企业器械部负责人</p>
+            </div>
+          </div>
+          <div class="column item2">
+            <img src="../images/section7/item3.png" alt="">
+            <div class="text">
+              <p class="column-title">
+                无境骨科智慧仓是一个全新的、针对骨科器械管理的解决方案，并且可以在院内建仓，模板化、智能化操作让骨科耗材器械送错、迟到的概率降为0，紧急的创伤手术病患不用再痛苦地等待。这对于我们医院和病患来说，都是一个非常好的消息。我非常愿意向医院和相关的医疗机构推荐无境骨科智慧仓。
+              </p>
+              <p class="column-text">——‌知名医疗器械企业总经理</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section8">
+      <p>Infynova</p>
+      <a class="button" href="about.html">关于我们</a>
+    </div>
+    <div class="footer">
+      <div class="columns contact">
+        <div class="column">
+          <img src="../images/footer-logo.png" alt="">
+        </div>
+        <div class="column">
+          <span>地址：深圳市南山区华润置地大厦C座9F</span>
+          <span>邮箱：contact [at] infynova.com</span>
+        </div>
+        <div class="column">
+          <a href="">使用条款</a>
+          <a href="">加入我们</a>
+        </div>
+        <div class="column columns">
+          <div class="qrcode about column">
+            <img src="../images/about-qrcode.png" alt="">
+            <p>关注无境创新</p>
+          </div>
+          <div class="qrcode magazine column">
+            <img src="../images/magazine-qrcode.png" alt="">
+            <p>关注无境周刊<em>获取骨科耗材的最新政策、行业资讯及创新技术分享‌</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2019 深圳无境创新科技有限公司 版权所有
+          <a href="">© IPC备案</a>
+        </p>
+      </div>
+    </div>
   </div>
+  <div class="modal about-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <img src="../images/about-qrcode.png" alt="">
+      <p>关注无境</p>
+      <span>或直接填写预约</span>
+      <a href="" class="button">去填写</a>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('about')"></button>
+  </div>
+  <div class="modal magazine-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <img src="../images/magazine-qrcode.png" alt="">
+      <p>免费订阅</p>
+      <span>关注，免费订阅骨科行业周刊</span>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('magazine')"></button>
+  </div>
+
+  <script>
+    const $aboutModal = document.querySelector('.about-modal');
+    const $magazineModal = document.querySelector('.magazine-modal');
+
+    const showModal = (_type) => {
+      switch (_type) {
+        case 'about':
+          $aboutModal.classList.add( 'is-active' );
+          break;
+        case 'magazine':
+          $magazineModal.classList.add( 'is-active' );
+          break;
+        default:
+          return;
+      }
+    }
+
+    const closeModal = (_type) => {
+      switch (_type) {
+        case 'about':
+          $aboutModal.classList.remove( 'is-active' );
+          break;
+        case 'magazine':
+          $magazineModal.classList.remove( 'is-active' );
+          break;
+        default:
+          return;
+      }
+    }
+  </script>
 </body>
 
 </html>
