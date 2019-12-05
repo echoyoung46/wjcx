@@ -26,7 +26,9 @@
       </div>
     </nav>
     <div class="section section1">
-    
+      <div class="content">
+        <h1>以创新科技让美好生活更近。<br>Make better life closer.</h1>
+      </div>
     </div>
     <section class="section2">
       <div class="content">
@@ -34,17 +36,19 @@
         <p>引入国际先进的理念，通过自主研发的 AIoT 与数字化技术已为医疗健康、文化、地产等多个产业提供了先进的供应链智能化解决方案。已服务华润集团、中海外集团、中石化集团、中国南方航空、深圳出版集团等多家具备产业级影响力的龙头企业。</p>
       </div>
     </section>
-    <div class="section section3"></div>
+    <div class="section section3">
+      <img src="../images/about/company.jpg" alt="">
+    </div>
     <section class="section section4">
       <div class="content">
         <h1>无境创新团队</h1>
         <p>由来自美国约翰霍普金斯大学的创始团队成立，无境创新先后获得顶级风险投资机构和产业资本的多轮投资。专业的管理和技术团队、强大的股东背景、深厚的行业资源是无境创新持续领先发展的保障。</p>
 
-        <a class="button is-link is-large" href="javascript:;" onclick="showModal('about')">加入我们</a>
+        <a class="button is-link is-large" href="https://company.zhaopin.com/CZ573830980.htm" target="_blank">加入我们</a>
       </div>
     </section>
     <div class="section section5">
-      
+      <img src="../images/about/footer-banner.png" alt="">
     </div>
     <div class="footer">
       <div class="columns contact">
@@ -56,8 +60,8 @@
           <span>邮箱：contact [at] infynova.com</span>
         </div>
         <div class="column">
-          <a href="">使用条款</a>
-          <a href="">加入我们</a>
+          <a href=" javascript:;">使用条款</a>
+          <a href="https://company.zhaopin.com/CZ573830980.htm" target="_blank">加入我们</a>
         </div>
         <div class="column columns">
           <div class="qrcode about column">
@@ -77,6 +81,36 @@
       </div>
     </div>
   </div>
+  <script>
+    const $aboutModal = document.querySelector('.about-modal');
+    const $magazineModal = document.querySelector('.magazine-modal');
+
+    const showModal = (_type) => {
+      switch (_type) {
+        case 'about':
+          $aboutModal.classList.add( 'is-active' );
+          break;
+        case 'magazine':
+          $magazineModal.classList.add( 'is-active' );
+          break;
+        default:
+          return;
+      }
+    }
+
+    const closeModal = (_type) => {
+      switch (_type) {
+        case 'about':
+          $aboutModal.classList.remove( 'is-active' );
+          break;
+        case 'magazine':
+          $magazineModal.classList.remove( 'is-active' );
+          break;
+        default:
+          return;
+      }
+    }
+  </script>
 </body>
 
 </html>

@@ -63,8 +63,8 @@
     <div class="section section3">
       <div class="container layer">
         <div class="content layer">
-          <h1 class="common-title">医院版骨科智慧仓</h1>
-          <h2 class="subtitle">我们帮助医院提升骨科耗材管理能力，<br>最大化避免手术意外风险</h2>
+          <h1 class="common-title anim" id="section3-title">医院版骨科智慧仓</h1>
+          <h2 class="subtitle anim anim-delay" id="section3-text">我们帮助医院提升骨科耗材管理能力，<br>最大化避免手术意外风险</h2>
         </div>
       </div>
     </div>
@@ -95,26 +95,26 @@
           <div class="desc-list">
             <div class="desc-label">
               <ul>
-                <li><span class="icon1"></span></li>
-                <li><span class="icon2"></span></li>
-                <li><span class="icon3"></span></li>
-                <li><span class="icon4"></span></li>
-                <li><span class="icon5"></span></li>
-                <li><span class="icon6"></span></li>
-                <li><span class="icon7"></span></li>
-                <li><span class="icon8"></span></li>
+                <li class="anim"><span class="icon1"></span></li>
+                <li class="anim"><span class="icon2"></span></li>
+                <li class="anim"><span class="icon3"></span></li>
+                <li class="anim"><span class="icon4"></span></li>
+                <li class="anim"><span class="icon5"></span></li>
+                <li class="anim"><span class="icon6"></span></li>
+                <li class="anim"><span class="icon7"></span></li>
+                <li class="anim"><span class="icon8"></span></li>
               </ul>
             </div>
             <div class="desc-text">
               <ul>
-                <li>专业化骨科工具和钉盒管理</li>
-                <li>骨科手术组套及手术模板</li>
-                <li>系统秒级核验，不丢不错</li>
-                <li>AI视觉辅助系统，6天快速上手</li>
-                <li>严格遵循药监合规性要求</li>
-                <li>支持UDI和一物一码，高效双向物流</li>
-                <li>365天低成本运作，远程值守</li>
-                <li>一个会进化的骨科智慧仓‌</li>
+                <li class="anim">专业化骨科工具和钉盒管理</li>
+                <li class="anim">骨科手术组套及手术模板</li>
+                <li class="anim">系统秒级核验，不丢不错</li>
+                <li class="anim">AI视觉辅助系统，6天快速上手</li>
+                <li class="anim">严格遵循药监合规性要求</li>
+                <li class="anim">支持UDI和一物一码，高效双向物流</li>
+                <li class="anim">365天低成本运作，远程值守</li>
+                <li class="anim">一个会进化的骨科智慧仓‌</li>
               </ul>
             </div>
           </div>
@@ -166,19 +166,19 @@
       </div>
       <div class="case case1">
         <div class="content layer">
-          <h1 class="common-title">华润医药商业</h1>
-          <h2 class="subtitle">
+          <h1 class="common-title anim" id="case1-title">华润医药商业</h1>
+          <h2 class="subtitle anim anim-delay" id="case1-text">
             无境创新已经为华润吉林医药公司落地了骨科智慧仓，品规及借还数据全数字化记录，提高了90%的效率，实现365天运作，出错率降为0。大大降低了骨科高值耗材管理的难度，为其业务快速扩张提供了保障。</h2>
         </div>
       </div>
       <div class="case case2">
         <div class="content layer">
-          <h1 class="common-title">国内知名医疗器械企业</h1>
-          <h2 class="subtitle">
+          <h1 class="common-title anim" id="case2-title">国内知名医疗器械企业</h1>
+          <h2 class="subtitle anim anim-delay" id="case2-text">
             在深圳与国内知名医疗器械企业合作落地了骨科智慧仓，采用AI识别引擎，身份控制，全方位监控系统，真正实现24小时远程管理，是无境骨科智慧仓的下一代示范仓，提升了该客户的企业形象与专业度。</h2>
         </div>
       </div>
-      <div class="container">
+      <div class="case-list">
         <div class="columns">
           <div class="column item1">
             <img src="../images/section7/item1.png" alt="">
@@ -212,7 +212,7 @@
     </div>
     <div class="section section8">
       <p>Infynova</p>
-      <a class="button" href="about.html">关于我们</a>
+      <a class="button anim" href="about.html" id="about-button">关于我们</a>
     </div>
     <div class="footer">
       <div class="columns contact">
@@ -224,8 +224,8 @@
           <span>邮箱：contact [at] infynova.com</span>
         </div>
         <div class="column">
-          <a href="">使用条款</a>
-          <a href="">加入我们</a>
+          <a href="javascript:;">使用条款</a>
+          <a href="https://company.zhaopin.com/CZ573830980.htm" target="_blank">加入我们</a>
         </div>
         <div class="column columns">
           <div class="qrcode about column">
@@ -292,6 +292,42 @@
           break;
         default:
           return;
+      }
+    }
+
+    const $ = (el) => {
+      return document.querySelector( el );
+    }
+
+    window.onscroll = function() {
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      // console.log(scrollTop);
+      if ( scrollTop > 1600 ) {
+        // 骨科仓
+        $('#section3-title').classList.add('fadeInUp');
+        $('#section3-text').classList.add('fadeInUp');
+      }
+
+      if ( scrollTop > 2400 ) {
+        document.querySelectorAll('.desc-list li').forEach(item => {
+          item.classList.add('fadeInUp');
+        })
+      }
+
+      if ( scrollTop > 4800 ) {
+        // 成功案例
+        $('#case1-title').classList.add('fadeInUp');
+        $('#case1-text').classList.add('fadeInUp');
+      }
+
+      if ( scrollTop > 5500 ) {
+        // 成功案例
+        $('#case2-title').classList.add('fadeInUp');
+        $('#case2-text').classList.add('fadeInUp');
+      }
+
+      if ( scrollTop > 7000 ) {
+        $('#about-button').classList.add('bounceIn');
       }
     }
   </script>
