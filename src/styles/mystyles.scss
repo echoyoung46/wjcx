@@ -85,6 +85,7 @@ body {
             width: 122px;
             height: 42px;
             line-height: 42px;
+            font-size: 15px;
         }
     }
 
@@ -125,7 +126,7 @@ h1 {
 
 .index-page {
     .section1 {
-        background: url(../images/banner.png) no-repeat;
+        background: url(../images/banner.png) center no-repeat;
         background-size: cover;
         height: 850px;
 
@@ -142,9 +143,9 @@ h1 {
             width: px2percent(756px, $totalWidth);
             height: 260px;
             line-height: 130px;
-            font-size: 108px;
             text-align: left;
             white-space: nowrap;
+            font-size: 108px;
         }
 
         .content {
@@ -243,7 +244,8 @@ h1 {
         .container {
             width: px2percent($contentWidth, $totalWidth);
             height: px2percent(899px, 991px);
-            background: url(../images/section3/banner.png);
+            background: url(../images/section3/banner.png) center;
+            background-size: cover;
             top: -100px;
             left: 50%;
             transform: translateX(-50%);
@@ -255,7 +257,7 @@ h1 {
             height: px2percent(339px, 899px);
             left: 0;
             bottom: 0;
-            height: 339px;
+            // height: 339px;
             background-color: rgba(245, 245, 245, 1);
 
             .common-title {
@@ -287,20 +289,21 @@ h1 {
         }
 
         .swiper-column {
-            flex: 2;
+            flex: 3;
             width: 600px;
-            height: 540px;
             margin: 0 100px 0 150px;
         }
 
         .swiper-container {
             width: 100%;
-            height: 100%;
-            ;
         }
 
         .swiper-slide {
             width: 402px;
+        }
+
+        .desc-column {
+            flex: 2;
         }
 
         .desc-list {
@@ -366,6 +369,7 @@ h1 {
 
         .container {
             margin-top: 80px;
+            margin-bottom: 30px;
         }
 
     }
@@ -504,7 +508,7 @@ h1 {
                 content: '';
                 position: absolute;
                 display: inline-block;
-                width: 550px;
+                width: 40%;
                 height: 1px;
                 background: #979797;
                 top: 50%;
@@ -633,8 +637,14 @@ h1 {
         color: #fff;
         font-size: 14px;
 
+        p {
+            white-space: nowrap;
+        }
+
         em {
             font-size: 10px;
+            display: block;
+            white-space: normal;
         }
     }
 
@@ -759,4 +769,8 @@ h1 {
     .section5 {
         display: flex;
     }
+}
+
+.navbar-item img {
+    max-height: auto;
 }

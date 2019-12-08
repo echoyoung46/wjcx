@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>无境官网</title>
 </head>
 
@@ -12,7 +13,7 @@
   <div class="wrap">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
+        <a class="navbar-item" href="index.html">
           <img src="../images/logo.png" width="112" height="28">
         </a>
       </div>
@@ -51,7 +52,7 @@
               <p class="column-text">我们帮助流通平台做到合法合规，低成本快速复制，减少人员依赖。</p>
             </div>
           </div>
-          <div class="column item2">
+          <div class="column item3">
             <div class="text">
               <p class="column-title">代理</p>
               <p class="column-text">我们帮助生产企业提升医院/经销商满意度，实时掌控下游数据。</p>
@@ -91,7 +92,7 @@
             </div>
           </div>
         </div>
-        <div class="column">
+        <div class="column desc-column">
           <div class="desc-list">
             <div class="desc-label">
               <ul>
@@ -299,34 +300,58 @@
       return document.querySelector( el );
     }
 
-    window.onscroll = function() {
+    let eventPos = [];
+    window.onscroll = function(e) {
       let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      // console.log(scrollTop);
-      if ( scrollTop > 1600 ) {
+      console.log(scrollTop);
+
+      if ( eventPos.length == 0 ) {
+        const windowWidth = document.body.clientWidth;
+        const scrollPos = {
+          '1920': [1600, 2400, 4800, 5500, 7000],
+          '1520': [1200, 1800, 3700, 4200, 5300],
+          '1140': [800, 1450, 2700, 3000, 4300],
+          '780': [1250, 1450, 2700, 3000, 4200],
+        };
+        const mediaArr = [1920, 1520, 1140, 780, 0];
+       
+        if ( windowWidth > mediaArr[1] ) {
+          eventPos = scrollPos[mediaArr[0]];
+        } else if ( windowWidth > mediaArr[2] ) {
+          eventPos = scrollPos[mediaArr[1]];
+        } else if ( windowWidth > mediaArr[3] ) {
+          eventPos = scrollPos[mediaArr[2]];
+        } else if ( windowWidth > mediaArr[4] ) {
+          eventPos = scrollPos[mediaArr[3]];
+        }
+        console.log(eventPos);
+      }
+      
+      if ( scrollTop > eventPos[0] ) {
         // 骨科仓
         $('#section3-title').classList.add('fadeInUp');
         $('#section3-text').classList.add('fadeInUp');
       }
 
-      if ( scrollTop > 2400 ) {
+      if ( scrollTop > eventPos[1] ) {
         document.querySelectorAll('.desc-list li').forEach(item => {
           item.classList.add('fadeInUp');
         })
       }
 
-      if ( scrollTop > 4800 ) {
+      if ( scrollTop > eventPos[2] ) {
         // 成功案例
         $('#case1-title').classList.add('fadeInUp');
         $('#case1-text').classList.add('fadeInUp');
       }
 
-      if ( scrollTop > 5500 ) {
+      if ( scrollTop > eventPos[3] ) {
         // 成功案例
         $('#case2-title').classList.add('fadeInUp');
         $('#case2-text').classList.add('fadeInUp');
       }
 
-      if ( scrollTop > 7000 ) {
+      if ( scrollTop > eventPos[4] ) {
         $('#about-button').classList.add('bounceIn');
       }
     }

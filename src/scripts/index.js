@@ -1,6 +1,9 @@
 import '../styles/normalize.scss';
 import '../styles/style.scss';
 require('../styles/mystyles.scss');
+require('../styles/1140.scss');
+require('../styles/780.scss');
+require('../styles/mobile.scss');
 
 import Swiper from 'swiper';
 
