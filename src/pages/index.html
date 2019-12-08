@@ -303,7 +303,6 @@
     let eventPos = [];
     window.onscroll = function(e) {
       let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      console.log(scrollTop);
 
       if ( eventPos.length == 0 ) {
         const windowWidth = document.body.clientWidth;
@@ -324,7 +323,6 @@
         } else if ( windowWidth > mediaArr[4] ) {
           eventPos = scrollPos[mediaArr[3]];
         }
-        console.log(eventPos);
       }
       
       if ( scrollTop > eventPos[0] ) {

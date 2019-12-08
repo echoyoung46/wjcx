@@ -238,4 +238,21 @@
             }
         }
     }
+    
+    .modal {
+        .modal-content {
+            width: 20rem;
+            height: 20rem;
+    
+            img {
+                width: 8rem;
+                height: 8rem;
+                margin-top: 3rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
