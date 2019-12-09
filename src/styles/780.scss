@@ -50,15 +50,22 @@
         }
 
         .section2 {
-            height: 600px;
+            height: 450px;
 
             .common-title {
                 margin-top: 100px;
             }
 
             .column {
+                height: 260px;
+
                 .column-title {
                     font-size: 18px;
+                }
+
+                .text {
+                    padding: 5px 10px;
+                    height: 100px;
                 }
             }
         }
@@ -135,5 +142,9 @@
                 font-size: 50px;
             }
         }
+    }
+
+    .footer {
+        font-size: 10px;
     }
 }
