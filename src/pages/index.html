@@ -123,7 +123,7 @@
       </div>
     </div>
     <div class="section section5">
-      <a class="button is-link" href="javascript:;" onclick="showModal('order')">预约参观</a>
+      <a class="button is-link is-large" href="javascript:;" onclick="showModal('order')">预约参观</a>
     </div>
     <div class="section section6">
       <div class="section-header">
@@ -147,7 +147,7 @@
             <em>签到</em>
           </span>
           <span class="step step6">
-            <em>确定定制化骨仓智能供应解决方案</em>
+            <em>确定定制化骨仓<br>智能供应解决方案</em>
           </span>
           <span class="step step7 step-line-row">
             <em>理念和操作培训</em>
@@ -185,7 +185,7 @@
             <img src="../images/section7/item1.png" alt="">
             <div class="text">
               <p class="column-title">
-                无境骨科智慧仓是一个全新的、针对骨科器械管理的解决方案，并且可以在院内建仓，模板化、智能化操作让骨科耗材器械送错、迟到的概率降为0，紧急的创伤手术病患不用再痛苦地等待。这对于我们医院和病患来说，都是一个非常好的消息。我非常愿意向医院和相关的医疗机构推荐无境骨科智慧仓。
+                “无境骨科智慧仓可以在院内建仓，模板化、智能化操作让骨科耗材器械送错、迟到的概率降为0，紧急的创伤手术病患不用再痛苦地等待。这对于我们医院和病患来说，都是一个非常好的消息。”
               </p>
               <p class="column-text">——‌大型三甲医院骨科专家</p>
             </div>
@@ -194,7 +194,7 @@
             <img src="../images/section7/item2.png" alt="">
             <div class="text">
               <p class="column-title">
-                无境骨科智慧仓是一个全新的、针对骨科器械管理的解决方案，并且可以在院内建仓，模板化、智能化操作让骨科耗材器械送错、迟到的概率降为0，紧急的创伤手术病患不用再痛苦地等待。这对于我们医院和病患来说，都是一个非常好的消息。我非常愿意向医院和相关的医疗机构推荐无境骨科智慧仓。
+                “无境骨仓对于经销商和平台来说都是非常好的解决方案，让高值耗材供应链做到真正的合法合规，可以给医疗器械供应链管理提供很大的帮助。”
               </p>
               <p class="column-text">——‌医疗流通龙头企业器械部负责人</p>
             </div>
@@ -203,7 +203,7 @@
             <img src="../images/section7/item3.png" alt="">
             <div class="text">
               <p class="column-title">
-                无境骨科智慧仓是一个全新的、针对骨科器械管理的解决方案，并且可以在院内建仓，模板化、智能化操作让骨科耗材器械送错、迟到的概率降为0，紧急的创伤手术病患不用再痛苦地等待。这对于我们医院和病患来说，都是一个非常好的消息。我非常愿意向医院和相关的医疗机构推荐无境骨科智慧仓。
+                “骨科智慧仓可以让医疗器械企业更加贴近客户、患者，让骨科器械供应链更加高效便捷和专业。对于医疗器械企业来说，是寻求创新突破，非常好的一个解决方案。”
               </p>
               <p class="column-text">——‌知名医疗器械企业总经理</p>
             </div>
@@ -252,7 +252,7 @@
       <img src="../images/about-qrcode.png" alt="">
       <p>关注无境</p>
       <span>或直接填写预约</span>
-      <a href="" class="button">去填写</a>
+      <a href="http://infynova.mikecrm.com/ZYllnrN" class="button">去填写</a>
     </div>
     <button class="modal-close is-large" aria-label="close" onclick="closeModal('about')"></button>
   </div>
@@ -303,14 +303,15 @@
     let eventPos = [];
     window.onscroll = function(e) {
       let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      // console.log(scrollTop);
 
       if ( eventPos.length == 0 ) {
         const windowWidth = document.body.clientWidth;
         const scrollPos = {
           '1920': [1600, 2400, 4800, 5500, 7000],
           '1520': [1200, 1800, 3700, 4200, 5300],
-          '1140': [800, 1450, 2700, 3000, 4300],
-          '780': [1250, 1450, 2700, 3000, 4200],
+          '1140': [800, 1450, 2700, 3000, 3850],
+          '780': [1250, 1450, 2700, 2900, 3800],
         };
         const mediaArr = [1920, 1520, 1140, 780, 0];
        
@@ -323,6 +324,7 @@
         } else if ( windowWidth > mediaArr[4] ) {
           eventPos = scrollPos[mediaArr[3]];
         }
+        // console.log(eventPos);
       }
       
       if ( scrollTop > eventPos[0] ) {

@@ -130,15 +130,25 @@
                     margin-bottom: 1.8rem;
                 }
             }
+
+            .swiper-column {
+                margin: 20px auto;
+            }
+        }
+
+        .section5 {
+            a {
+                font-size: 1rem;
+            }
         }
 
         .section6 {
-            height: 35rem;
+            height: 27rem;
 
             .process {
                 transform: scale(.35);
                 margin-left: -22rem;
-                margin-top: -20rem;
+                margin-top: -16rem;
             }
         }
 
@@ -149,7 +159,12 @@
             }
 
             .case {
-                height: 20rem;
+                height: 16rem;
+
+                .common-title {
+                    font-size: 1.5rem;
+                    margin-top: 2rem;
+                }
             }
 
             .content {
@@ -183,6 +198,10 @@
 
         .contact {
             padding: 0 2rem;
+
+            .column:nth-child(3) {
+                text-align: left;
+            }
         }
 
         .qrcode {

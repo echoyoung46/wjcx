@@ -44,7 +44,7 @@ $totalHeight: 1080px;
 }
 
 body {
-    font-family: 'PingFangSC-Regular', 'PingFangSC-Medium', 'Times New Roman', Times, serif;
+    // font-family: 'PingFangSC-Regular', 'PingFangSC-Medium', 'Times New Roman', Times, serif;
     color: #5a5a5a;
     background: #fff;
 }
@@ -243,10 +243,10 @@ h1 {
 
         .container {
             width: px2percent($contentWidth, $totalWidth);
-            height: px2percent(899px, 991px);
-            background: url(../images/section3/banner.png) center;
+            height: 100%;
+            background: url(../images/section3/banner.png) center no-repeat;
             background-size: cover;
-            top: -100px;
+            top: -92px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -254,14 +254,14 @@ h1 {
         .content {
             border-radius: 0 100px 0 0;
             width: px2percent(998px, $contentWidth);
-            height: px2percent(339px, 899px);
-            left: 0;
-            bottom: 0;
-            // height: 339px;
+            height: px2percent(300px, 900px);
+            left: -2px;
+            bottom: -2px;
             background-color: rgba(245, 245, 245, 1);
 
             .common-title {
                 text-align: left;
+                margin-top: 55px;
             }
 
 
@@ -393,11 +393,11 @@ h1 {
 
         .step {
             display: inline-block;
-            width: 85px;
-            height: 85px;
+            width: 74px;
+            height: 74px;
             background-size: contain;
             background-repeat: no-repeat;
-            margin-bottom: 269px;
+            margin-bottom: 140px;
             color: #999;
             font-size: 20px;
             position: relative;
@@ -410,6 +410,7 @@ h1 {
                 left: 50%;
                 margin-left: -80px;
                 text-align: center;
+                white-space: nowrap;
             }
         }
 
@@ -479,18 +480,22 @@ h1 {
                 content: '';
                 display: inline-block;
                 width: 2px;
-                height: 266px;
+                height: 108px;
                 border-left: 2px dashed #c9c9c9;
                 position: absolute;
                 left: 50%;
-                top: 90px;
+                top: 150px;
                 margin-left: -1px;
             }
         }
 
         .process {
             width: 910px;
-            margin: 100px auto 100px;
+            margin: 0 auto;
+        }
+
+        .container {
+            padding: 50px 0 100px;
         }
     }
 
@@ -524,8 +529,7 @@ h1 {
         }
 
         .case {
-            height: 980px;
-            // margin-bottom: 150px;
+            height: 954px;
             position: relative;
 
             &:before {
@@ -626,6 +630,10 @@ h1 {
         a {
             display: block;
         }
+
+        .column:nth-child(3) {
+            text-align: center;
+        }
     }
 
     a {
@@ -650,9 +658,22 @@ h1 {
 
     .copyright {
         margin: 10px 0;
+        padding: 4px 0;
         font-size: 14px;
         text-align: center;
         border-top: 1px solid #666;
+        color: #666;
+
+        a {
+            color: #666;
+        }
+    }
+
+    .column {
+        span,
+        a {
+            white-space: nowrap;
+        }
     }
 }
 
@@ -667,9 +688,8 @@ h1 {
 
 .modal {
     .modal-content {
-
-        width: px2percent(832px, $contentWidth);
-        height: px2percent(467px, $totalHeight);
+        width: 600px;
+        height: 400px;
         background: #fff;
         border-radius: 15px;
         text-align: center;
@@ -772,5 +792,5 @@ h1 {
 }
 
 .navbar-item img {
-    max-height: auto;
+    max-height: none;
 }

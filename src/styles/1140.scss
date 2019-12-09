@@ -79,6 +79,12 @@
                 height: 85%;
                 top: -50px;
             }
+
+            .content {
+                .common-title {
+                    margin-top: 20px;
+                }
+            }
         }
 
         .section4 {
@@ -118,6 +124,7 @@
         .section5 {
             a {
                 margin: 0 0 30px 0;
+                font-size: 16px;
             }
         }
 
@@ -126,6 +133,10 @@
                 transform: scale(.7);
                 transform-origin: center;
                 margin: 0 auto;
+            }
+
+            .container {
+                padding: 50px 0 0;
             }
         }
 
@@ -183,20 +194,28 @@
     }
 
     .footer {
-        font-size: 12px;
+        font-size: 10px;
+
+        .contact {
+            padding: 0 100px;
+        }
 
         .copyright {
-            font-size: 12px;
+            font-size: 10px;
         }
 
         .qrcode {
             font-size: 12px;
+
+            em {
+                font-size: 8px;
+            }
         }
     }
 
     .button {
         &.is-large {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     }
 }
