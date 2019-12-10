@@ -65,7 +65,8 @@
       <div class="container layer">
         <div class="content layer">
           <h1 class="common-title anim" id="section3-title">医院版骨科智慧仓</h1>
-          <h2 class="subtitle anim anim-delay" id="section3-text">我们帮助医院提升骨科耗材管理能力，<br>最大化避免手术意外风险</h2>
+          <h2 class="subtitle anim anim-delay" id="section3-text">我们帮助医院提升骨科耗材管理能力，</h2>
+          <h2 class="subtitle anim anim-delay" id="section4-text">最大化避免手术意外风险</h2>
         </div>
       </div>
     </div>
@@ -213,7 +214,7 @@
     </div>
     <div class="section section8">
       <p>Infynova</p>
-      <a class="button anim" href="about.html" id="about-button">关于我们</a>
+      <a class="button anim" href="about.html" id="about-button" onMouseOver="this.style.background='#034DCB'" onMouseOut="this.style.background=''">关于我们</a>
     </div>
     <div class="footer">
       <div class="columns contact">
@@ -308,7 +309,7 @@
       if ( eventPos.length == 0 ) {
         const windowWidth = document.body.clientWidth;
         const scrollPos = {
-          '1920': [1600, 2400, 4800, 5500, 7000],
+          '1920': [1600, 2400, 4800, 5500, 6780],
           '1520': [1200, 1800, 3700, 4200, 5300],
           '1140': [800, 1450, 2700, 3000, 3850],
           '780': [1250, 1450, 2700, 2900, 3800],
@@ -331,6 +332,7 @@
         // 骨科仓
         $('#section3-title').classList.add('fadeInUp');
         $('#section3-text').classList.add('fadeInUp');
+        $('#section4-text').classList.add('fadeInUp');
       }
 
       if ( scrollTop > eventPos[1] ) {

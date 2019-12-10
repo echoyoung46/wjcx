@@ -54,7 +54,17 @@
             h2 {
                 font-size: 1rem;
                 line-height: 2rem;
-                margin: .4rem 0 0 1rem;
+                margin: .6rem 0 0 1rem;
+            }
+
+            .buttons {
+                right: .5rem;
+            }
+
+            .button {
+                padding: .5rem;
+                margin: 0;
+                font-size: .8rem;
             }
         }
 
@@ -91,6 +101,15 @@
                 * {
                     margin-left: .5rem;
                 }
+
+                .common-title {
+                    font-size: 1.8rem;
+                    margin-top: 1.2rem;
+                }
+
+                .subtitle {
+                    line-height: .3rem;
+                }
             }
 
             .common-title {
@@ -102,7 +121,9 @@
                 line-height: 1.5rem;
             }
 
-
+            .container {
+                width: 90%;
+            }
         }
 
         .section4 {
@@ -112,6 +133,7 @@
 
             .subtitle {
                 font-size: 1.2rem;
+                line-height: 2rem;
             }
 
             .container {
@@ -179,6 +201,11 @@
 
             .column {
                 width: 100%;
+                line-height: 2rem;
+            }
+
+            .case-list {
+                margin: 3rem;
             }
            
         }
@@ -186,10 +213,6 @@
         .section8 {
             height: 14rem;
             font-size: 2rem;
-
-            p {
-                margin: 1rem 0;
-            }
         }
     }
 
@@ -204,12 +227,33 @@
             }
         }
 
+        .footer-logo {
+            width: 8rem;
+            height: auto;
+        }
+
         .qrcode {
-            display: flex;
+            width: 50%;
+            display: inline-grid;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+            }
 
             p {
-                margin-top: 2rem;
-                margin-left: 1rem;
+                margin-top: 1rem;
+            }
+
+            em {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        .column {
+            span {
+                display: block;
             }
         }
     }
@@ -217,29 +261,36 @@
     .about-page {
         .section1 {
             height: 25rem;
+            background-size: cover;
 
             .content {
-                top: 15rem;
+                top: 17rem;
             }
 
             h1 {
                 font-size: 2rem;
             }
         }
-
+        
         .section2 {
             .content {
                 width: 80%;
                 margin: 2rem auto;
             }
-
+            
             h1 {
                 font-size: 2rem;
+                white-space: normal;
             }
 
             p {
                 font-size: 1rem;
             }
+        }
+
+
+        .button.is-large {
+            font-size: 1rem;
         }
 
         .section4 {

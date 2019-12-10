@@ -71,8 +71,8 @@ body {
 
 .navbar {
     width: $contentWidth;
-    height: 90px;
-    background: rgba(255, 255, 255, .8);
+    height: 70px;
+    background: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
 
@@ -107,7 +107,6 @@ h1 {
         color: #333;
         text-align: center;
         margin-top: 80px;
-        font-weight: normal;
     }
 
     .common-content {
@@ -131,28 +130,27 @@ h1 {
         background-size: cover;
         height: 850px;
 
-        .button {
-            width: 242px;
-            height: 84px;
-            line-height: 84px;
-            font-size: 30px;
+        .buttons {
+            position: absolute;
+            top: 50%;
+            right: 150px;
+            transform: translateY(-50%);
         }
 
         h1 {
             left: px2percent(406px, $totalWidth);
-            top: px2percent(440px, 850px);
+            top: px2percent(440px, 1080px);
             width: px2percent(756px, $totalWidth);
             height: 260px;
             line-height: 130px;
             text-align: left;
             white-space: nowrap;
-            font-size: 108px;
-            font-weight: normal;
+            font-size: 106px;
         }
 
         .content {
             right: 0;
-            top: 758px;
+            bottom: -100px;
             width: px2percent(1601px, $totalWidth);
             height: 230px;
             background-color: rgba(245, 245, 245, 1);
@@ -170,13 +168,14 @@ h1 {
             float: left;
         }
 
-        .buttons {
-            float: right;
-            margin: 63px 233px 0 0;
-        }
+        // .buttons {
+        //     float: right;
+        //     margin: 63px 233px 0 0;
+        // }
 
         .button {
-            margin-left: 65px;
+            margin-left: 20px;
+            padding: 25px 40px;
 
             &:first-child {
                 margin-left: 0;
@@ -185,7 +184,7 @@ h1 {
     }
 
     .section2 {
-        height: 900px;
+        height: 750px;
         background-color: rgba(255, 255, 255, 1);
 
         .common-title {
@@ -196,7 +195,7 @@ h1 {
 
         .column {
             width: px2percent(415px, 1442px);
-            height: 430px;
+            height: 350px;
             position: relative;
             background: #333;
             margin-left: 80px;
@@ -211,7 +210,9 @@ h1 {
                 bottom: 0;
                 width: 100%;
                 background-color: rgba(255, 255, 255, 0.9);
-                padding: 20px 60px;
+                padding: 20px 40px;
+                height: 150px;
+                box-sizing: border-box;
             }
 
             .column-title {
@@ -221,8 +222,7 @@ h1 {
             }
 
             .column-text {
-                font-size: 18px;
-                width: 272px;
+                font-size: 16px;
             }
         }
 
@@ -267,8 +267,12 @@ h1 {
             .common-title {
                 text-align: left;
                 margin-top: 55px;
+                font-size: 58px;
             }
 
+            .subtitle {
+                line-height: 10px;
+            }
 
             * {
                 margin-left: 40px;
@@ -382,7 +386,7 @@ h1 {
 
     .section5 {
         text-align: center;
-        background: #fff;
+        background: #f5f5f5;
 
         a {
             margin: 50px 0;
@@ -470,7 +474,7 @@ h1 {
             &:after {
                 content: '';
                 display: inline-block;
-                width: 322px;
+                width: 288px;
                 height: 2px;
                 border-top: 2px dashed #c9c9c9;
                 position: absolute;
@@ -487,7 +491,7 @@ h1 {
                 content: '';
                 display: inline-block;
                 width: 2px;
-                height: 108px;
+                height: 66px;
                 border-left: 2px dashed #c9c9c9;
                 position: absolute;
                 left: 50%;
@@ -554,7 +558,7 @@ h1 {
         .case1 {
             background: url(../images/section7/case1.png) no-repeat;
             background-size: cover;
-            border-bottom: 1px solid #979797;
+            // margin-left: -1px;
 
             .common-title,
             .subtitle {
@@ -565,6 +569,7 @@ h1 {
         .case2 {
             background: url(../images/section7/case2.png) no-repeat;
             background-size: cover;
+            // margin-top: -1px;
 
             .common-title,
             .subtitle {
@@ -611,10 +616,17 @@ h1 {
         text-align: center;
         color: #fff;
         font-size: 40px;
-        padding-top: 30px;
+        //padding-top: 30px;
+        /*flex 布局*/
+        display: flex;
+        flex-direction: column;
+        /*实现垂直居中*/
+        align-items: center;
+        /*实现水平居中*/
+        justify-content: center;
 
         p {
-            margin: 20px 0;
+            margin-bottom: 20px;
         }
 
         .button {
@@ -747,18 +759,13 @@ h1 {
     background: #fff;
     color: #333;
 
-    h1 {
-        font-weight: normal;
-    }
-
     .section1 {
         background: url(../images/about/banner.png) no-repeat;
         background-size: cover;
-        height: 940px;
+        height: 750px;
 
         .content {
             position: absolute;
-            // width: px2percent(1170px, $totalWidth);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -779,6 +786,7 @@ h1 {
 
         h1 {
             font-size: 32px;
+            white-space: nowrap;
         }
 
         p {
@@ -809,6 +817,10 @@ h1 {
 
     .section5 {
         display: flex;
+        
+        img {
+            width: 100%;
+        }
     }
 }
 
