@@ -59,6 +59,7 @@
 
             .buttons {
                 right: .5rem;
+                display: none;
             }
 
             .button {
@@ -168,9 +169,12 @@
             height: 27rem;
 
             .process {
-                transform: scale(.35);
-                margin-left: -22rem;
-                margin-top: -16rem;
+                // transform: scale(.35);
+                // margin-left: -22rem;
+                // margin-top: -16rem;
+                top: 50%;
+                left: 50%;
+                transform: scale(.35) translate(-82%, -34%);
             }
         }
 
